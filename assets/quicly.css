@@ -1,0 +1,344 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 5%;
+  }
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+footer .footer-top .left .input button, #hero .hero .content .buttons .LearnMore, #hero .hero .content .buttons .SignUp, header .header .SignUp {
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #20484F;
+  background-color: #B8E4DA;
+  border: none;
+}
+footer .footer-top .left .input button:hover, #hero .hero .content .buttons .LearnMore:hover, #hero .hero .content .buttons .SignUp:hover, header .header .SignUp:hover {
+  background-color: #FFFFFF;
+  color: #20484F;
+}
+
+header .header .Login {
+  padding: 10px 20px;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+header .header .Login:hover {
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+}
+
+header {
+  background-color: #20484F;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+header .header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+header .header nav ul li a {
+  color: #FFFFFF;
+}
+header .header .fa-solid {
+  display: none;
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  header .header nav {
+    display: none;
+  }
+  header .header .buttons {
+    display: none;
+  }
+  header .header .fa-solid {
+    display: block;
+  }
+}
+
+#hero {
+  background-color: #FAFAFA;
+}
+#hero .hero {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+#hero .hero .content {
+  width: 50%;
+}
+#hero .hero .content h5 {
+  font-size: 18px;
+  color: #20484F;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#hero .hero .content h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #072125;
+}
+#hero .hero .content p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #072125;
+}
+#hero .hero .content .buttons {
+  margin: 5rem 0;
+}
+#hero .hero .content .buttons .SignUp {
+  background-color: #20484F;
+  color: #FFFFFF;
+}
+#hero .hero .content .buttons .LearnMore {
+  background-color: #FFFFFF;
+  border: 1px solid #20484F;
+}
+#hero .hero .content .buttons .LearnMore:hover {
+  background-color: #B8E4DA;
+}
+#hero .hero .image {
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  #hero .hero {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+#team .team h2 {
+  color: #072125;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+#team .team p {
+  color: #072125;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+#team .team .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#team .team .cards .card {
+  width: 30%;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 2rem 0;
+  border: 1px solid rgba(32, 72, 79, 0.1019607843);
+  background-color: white;
+}
+#team .team .cards .card img {
+  width: 50%;
+}
+#team .team .cards .card .fa-brands {
+  color: #072125;
+  border: 1px solid rgba(32, 72, 79, 0.1019607843);
+  padding: 10px;
+  border-radius: 50px;
+}
+#team .team .cards .card .fa-brands:hover {
+  background-color: #B8E4DA;
+}
+#team .team .cards .card h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+@media screen and (max-width: 767px) {
+  #team .team .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+footer {
+  background-color: #072125;
+}
+footer .footer-top {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+footer .footer-top .left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+footer .footer-top .left h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+footer .footer-top .left .inputs {
+  display: flex;
+  gap: 5rem;
+}
+footer .footer-top .left .inputs .input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-top .left .inputs .input label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+footer .footer-top .left .input {
+  position: relative;
+}
+footer .footer-top .left .input input {
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+footer .footer-top .left .input button {
+  padding: 10px 30px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  position: absolute;
+  right: 7rem;
+  color: #072125;
+  outline: none;
+}
+footer .footer-top .right .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+footer .footer-top .right .navbar h5 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+footer .footer-top .right .navbar nav ul li a {
+  color: #DCF2ED;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+footer .footer-top .right .navbar nav ul li a:hover {
+  color: aqua;
+}
+footer .footer-bottom {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+@media screen and (max-width: 767px) {
+  footer .footer-top {
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+  }
+  footer .footer-top .right .navbar {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=quicly.css.map */

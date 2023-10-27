@@ -1,0 +1,60 @@
+#hero {
+    background-color: $secondary-bg-color;
+  .hero {
+    padding-top: 5rem;
+    @include flex();
+    column-gap: 5rem;
+    .content {
+      width: 50%;
+      h5 {
+        font-size: 18px;
+        color: $primary-bg-color;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      h1 {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 77px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $dark-color;
+      }
+      p {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $dark-color;
+      }
+      .buttons{
+        margin: 5rem 0;
+        .SignUp{
+          @extend %primary-btn;
+          background-color: $primary-bg-color;
+          color: $text-color;
+      }
+      .LearnMore{
+          @extend %primary-btn;
+          background-color: $text-color;
+          border: 1px solid $primary-bg-color;
+          &:hover{
+            background-color: $button-color;
+          }
+      }
+      }
+    }
+    .image {
+      width: 50%;
+    }
+
+    @media screen and (max-width:767px) {
+      flex-direction: column-reverse;
+      gap: 2rem;
+      align-items: center;
+    }
+  }
+}

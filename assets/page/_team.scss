@@ -1,0 +1,59 @@
+#team {
+  .team {
+    h2 {
+      color: $dark-color;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 50px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    p {
+      color: $dark-color;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .cards {
+        @include flex();
+        flex-wrap: wrap;
+      .card {
+        width: 30%;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 2rem 0;
+        border: 1px solid #20484F1A;
+        background-color: white;
+        img {
+          width: 50%;
+        }
+        .fa-brands {
+          color: $dark-color;
+          border: 1px solid #20484f1a;
+          padding: 10px;
+          border-radius: 50px;
+          &:hover{
+            background-color: $button-color;
+          }
+        }
+        h4 {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 30px;
+          letter-spacing: 0em;
+        }
+      }
+    }
+    @media screen and (max-width:767px) {
+      .cards{
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

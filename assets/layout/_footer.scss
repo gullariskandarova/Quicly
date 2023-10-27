@@ -1,0 +1,108 @@
+footer {
+  background-color: $dark-color;
+  .footer-top {
+    padding: 4rem 0;
+    @include flex();
+    .left {
+      h3 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $text-color;
+      }
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      .inputs {
+        display: flex;
+        gap: 5rem;
+        .input {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          label {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $text-color;
+          }
+        }
+      }
+
+      .input {
+        position: relative;
+        input {
+          padding: 10px 30px;
+          border-radius: 8px;
+          border: none;
+          outline: none;
+        }
+        button {
+          @extend %primary-btn;
+          padding: 10px 30px;
+          border-bottom-left-radius: 0;
+          border-top-left-radius: 0;
+          position: absolute;
+          right: 7rem;
+          color: $dark-color;
+          outline: none;
+        }
+      }
+    }
+    .right {
+      .navbar {
+        @include flex();
+        gap: 5rem;
+        h5 {
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 40px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $text-color;
+        }
+        nav {
+          ul {
+            li {
+              a {
+                color: $primary-light;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                &:hover{
+                    color: aqua;
+                    
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    border-bottom: 1px solid gray;
+  }
+  .footer-bottom{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  @media screen and (max-width:767px) {
+    .footer-top{
+      flex-direction: column;
+      gap: 5rem;
+      align-items: center;
+      .right{
+        .navbar{
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
